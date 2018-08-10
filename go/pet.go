@@ -10,8 +10,9 @@
 
 package swagger
 
+// Pet pet
+// swagger:model Pet
 type Pet struct {
-
 	Id int64 `json:"id,omitempty"`
 
 	Category *Category `json:"category,omitempty"`

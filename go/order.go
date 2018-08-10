@@ -14,8 +14,9 @@ import (
 	"time"
 )
 
+// Order order
+// swagger:model Order
 type Order struct {
-
 	Id int64 `json:"id,omitempty"`
 
 	PetId int64 `json:"petId,omitempty"`

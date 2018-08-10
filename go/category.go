@@ -10,8 +10,9 @@
 
 package swagger
 
+// Category category
+// swagger:model category
 type Category struct {
-
 	Id int64 `json:"id,omitempty"`
 
 	Name string `json:"name,omitempty"`

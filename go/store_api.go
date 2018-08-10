@@ -14,6 +14,16 @@ import (
 	"net/http"
 )
 
+// swagger:route DELETE /store/order store deleteOrder
+//
+// Delete purchase order by ID.
+// Produces:
+// application/json
+// application/xml
+//
+// Responses:
+// 400: body: Invalid ID supplied
+// 404: body: Order not found
 func DeleteOrder(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json; charset=UTF-8")
 	w.WriteHeader(http.StatusOK)
